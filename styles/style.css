@@ -243,3 +243,17 @@ body{
     background-color: white;
     border-radius: 90px;
 }
+
+.login-container p{
+    margin: 1px;
+}
+
+.login-container button{
+    border-radius: 0;
+    width: 90px;
+}
+
+.bg-container{
+    background-image: url(../resources/homepage/hero.jpeg);
+    background-size: cover;
+}
