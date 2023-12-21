@@ -37,9 +37,9 @@ body{
     flex: 0;
     padding: 10px 20px;
     text-align: center;
-    background-color: black;
-    color: white;
-    border: 2px solid white;
+    background-color: #ffe512;
+    color: black;
+    border: 2px solid black;
     border-radius: 20px;
     font-size: 14px;
     font-family: 'Oswald';
@@ -47,8 +47,7 @@ body{
 }
 
 .header .right button:hover{
-    background-color: #ffe512;
-    color: black;
+    border: 2px solid #ffe512;
 }
 
 .nav-bar-content{
@@ -72,4 +71,144 @@ body{
 
 .nav-bar-content li a:hover{
     border-bottom: 3px solid #ffe512;
+}
+
+.hero{
+    background-image: url(../resources/homepage/hero.jpeg);
+    width: 71.2vw;
+    height: 500px;
+    background-size: cover;
+    text-align: center;
+    padding-bottom: 100px;
+    border-bottom: 5px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero p{
+    margin: 0;
+    color: white;
+    font-weight: bold;
+    font-size: 80px;
+    padding-top: 50px;
+}
+
+.hero button{
+    font-family: 'Oswald', sans-serif;
+    padding: 10px 3px;
+    background-color: #ffe512;
+    font-size: 20px;
+    border: 1px solid #ffe512;
+}
+.hero button:hover{
+    border: 1px solid black;
+}
+
+.offer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.offer p{
+    font-size: 30px;
+}
+
+.offer .offer-list{
+    display: flex;
+    gap: 30px;
+}
+
+.offer .offer-list .offer-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.offer .offer-list .offer-item p{
+    font-size: 20px;
+}
+
+.offer .offer-list .offer-item img{
+    width: 300px;
+    height: 300px;
+    border: 6px solid #ffe512;
+}
+
+.product{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(212, 196, 196, 0.278);
+    padding-bottom: 100px;
+}
+.product button{
+    width: auto;
+    max-width: 200px;
+    margin: auto;
+    margin-top: 30px;
+    background-color: #ffe512;
+    color: black;
+    font-size: 20px;
+    border: 1px solid black;
+    padding: 10px 3px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.product p{
+    font-size: 30px;
+}
+
+.product .image-wrapper .image-list .product-item p{
+    font-size: 20px;
+
+}
+
+.product .image-wrapper .image-list{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 30px;
+    overflow-x: auto;
+}
+
+.product .image-wrapper .image-list::-webkit-scrollbar{
+    display: none;
+}
+
+.product .image-wrapper .image-list .image-item{
+    width: 300px;
+    object-fit: cover;
+}
+
+.footer{
+    background-color: grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: black;
+   
+}
+
+.footer .right-side .social-medias{
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+}
+
+
+.footer .right-side .social-medias a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer .right-side .social-medias a img{
+    width: 30px;
+    background-color: white;
+    border-radius: 90px;
 }
