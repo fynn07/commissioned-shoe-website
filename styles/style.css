@@ -256,4 +256,49 @@ body{
 .bg-container{
     background-image: url(../resources/homepage/hero.jpeg);
     background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
+
+.news-object{
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    gap: 30px;
+    
+}
+
+.news-object img{
+    width: 400px;
+    height: 500px;
+    border: 4px solid #ffe512;
+}
+
+.news-object .left-side{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.news-object .right-side{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.news-object h2{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.news-object p{
+    font-size: 25px;
+}
+
+.news-2, .news-4{
+    background-color: rgba(212, 196, 196, 0.278);
+}
+
