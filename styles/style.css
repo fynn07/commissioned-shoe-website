@@ -275,14 +275,7 @@ body{
     border: 4px solid #ffe512;
 }
 
-.news-object .left-side{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.news-object .right-side{
+.news-object .left-side, .news-object .right-side{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -301,4 +294,50 @@ body{
 .news-2, .news-4{
     background-color: rgba(212, 196, 196, 0.278);
 }
+
+.partner-object{
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    gap: 40px;
+}
+
+.partner-object img{
+    width: 400px;
+    height: 400px;
+}
+
+.partner-3 img{
+    width: 400px;
+    height: 300px;
+}
+
+.partner-object h2{
+    font-size: 50px;
+    margin: 0px;
+}
+
+.partner-object p{
+    font-size: 20px;
+}
+
+.partner-object button{
+    font-family: 'Oswald', sans-serif;
+    background-color: #ffe512;
+    color: black;
+    font-size: 20px;
+    border: 2px solid black;
+}
+
+.partner-object .left-side, .partner-object .right-side{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.partner-2{
+    background-color: rgba(212, 196, 196, 0.278);
+}
+
 
