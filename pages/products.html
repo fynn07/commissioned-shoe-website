@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="../scripts/script.js"></script>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company: Login Page</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header content">
+            <div class="left">
+                <h1>logo</h1>    
+            </div>
+    
+            <div class="right">
+                <ul class="nav-bar-content">
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="news.html">NEWS</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="#">PRODUCTS</a></li>
+                    <li><a href="partners.html">PARTNERS</a></li>
+                </ul>
+                <button onclick="redirectLogin()">LOGIN</button>
+            </div>
+        </div>
+
+        <div class="product content">
+            <p>OUR PRODUCTS</p>
+            <div class="image-wrapper">
+                <div class="image-list">
+                    <div class="product-item" id="product_1">
+                        <img src="../resources/homepage/products/product_1.jpg" alt="website 1" class="image-item">
+                        <p>1460 SMOOTH LEATHER LACE UP BOOTS</p>
+                        <p>$160</p>
+                        <button onclick="addToCart('product_1', 160)">ADD TO CART</button>
+                    </div>
+                    <div class="product-item" id="product_2">
+                        <img src="../resources/homepage/products/product_2.jpg" alt="website 1" class="image-item">
+                        <p>2976 YELLOW STITCH SMOOTH LEATHER CHELSEA BOOTS</p>
+                        <p>$135</p>
+                        <button onclick="addToCart('product_2', 135)">ADD TO CART</button>
+                    </div>
+                    <div class="product-item" id="product_3">
+                        <img src="../resources/homepage/products/product_3.jpg" alt="website 1" class="image-item">
+                        <p>1461 SMOOTH LEATHER OXFORD SHOES</p>
+                        <p>$210</p>
+                        <button onclick="addToCart('product_3', 210)">ADD TO CART</button>
+                    </div>
+                    <div class="product-item" id="product_4">
+                        <img src="../resources/homepage/products/product_4.jpg" alt="website 1" class="image-item">
+                        <p>101 YELLOW STITCH SMOOTH LEATHER ANKLE BOOTS</p>
+                        <p>$190</p>
+                        <button onclick="addToCart('product_4', 190)">ADD TO CART</button>
+                    </div>
+                    <div class="product-item" id="product_5">
+                        <img src="../resources/homepage/products/product_5.jpg" alt="website 1" class="image-item">
+                        <p>1460 SMOOTH LEATHER LACE UP BOOTS</p>
+                        <p>$150</p>
+                        <button onclick="addToCart('product_5', 150)">ADD TO CART</button>
+                    </div>
+                    <div class="product-item" id="product_6">
+                        <img src="../resources/homepage/products/product_6.jpg" alt="website 1" class="image-item">
+                        <p>1461 NARROW PLAIN WELT SMOOTH LEATHER OXFORD SHOES</p>
+                        <p>$160</p>
+                        <button onclick="addToCart('product_6', 160)">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product content">
+            <div class="image-wrapper">
+                <div class="image-list">
+                    <div class="product-item" id="product_7">
+                        <img src="../resources/homepage/products/product_7.webp" alt="website 1" class="image-item">
+                        <p>JADON HI CONTRAST STITCH LEATHER PLATFORM BOOTS</p>
+                        <p>$210</p>
+                        <button onclick="addToCart('product_7', 210)">ADD TO CART</button>
+                    </div>
+                    <div class="product-item" id="product_8">
+                        <img src="../resources/homepage/products/product_8.webp" alt="website 1" class="image-item">
+                        <p>2976 YELLOW STITCH CRAZY HORSE LEATHER CHELSEA BOOTS</p>
+                        <p>$190</p>
+                        <button onclick="addToCart('product_8', 190)">ADD TO CART</button>
+                    </div>
+                    <div class="product-item" id="product_9">
+                        <img src="../resources/homepage/products/product_9.webp" alt="website 1" class="image-item">
+                        <p>AUDRICK TALL CHELSEA BOOTS</p>
+                        <p>$220</p>
+                        <button onclick="addToCart('product_9', 220)">ADD TO CART</button>
+                    </div>
+                    <div class="product-item" id="product_10">
+                        <img src="../resources/homepage/products/product_10.webp" alt="website 1" class="image-item">
+                        <p>1460 TATE VOLCANIC FLARE LEATHER BOOTS</p>
+                        <p>$225</p>
+                        <button onclick="addToCart('product_10', 225)">ADD TO CART</button>
+                    </div>
+                    <div class="product-item" id="product_11">
+                        <img src="../resources/homepage/products/product_11.webp" alt="website 1" class="image-item">
+                        <p>101 STREETER ANKLE BOOTS</p>
+                        <p>$215</p>
+                        <button onclick="addToCart('product_11', 215)">ADD TO CART</button>
+                    </div>
+                    <div class="product-item" id="product_12">
+                        <img src="../resources/homepage/products/product_12.webp" alt="website 1" class="image-item">
+                        <p>1460 TATE DECALCOMANIA LEATHER BOOTS</p>
+                        <p>$250</p>
+                        <button onclick="addToCart('product_12', 250)">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart content">
+            <div class="left-side" id="cart-containers">
+
+            </div>
+
+            <div class="right-side">
+                <h2>Total Cost:</h2>
+                <div class="price">
+                    <p>$</p>
+                    <p id="total-price">0</p>
+                </div>
+                <button>Buy Now</button>
+            </div>
+        </div>
+
+        <div class="footer content">
+            <div class="left-side">
+                <p>© 2023 Boots Company</p>
+            </div>
+            <div class="center">
+                <p>Pristine Kicks</p>
+            </div>
+            <div class="right-side">
+                <ul class="social-medias">
+                    <li><a href="#"><img src="../resources/icons/facebook.png" alt="Facebook"></a></li>
+                    <li><a href="#"><img src="../resources/icons/instagram.png" alt="Instagram"></a></li>
+                    <li><a href="#"><img src="../resources/icons/twitter.png" alt="Twitter"></a></li>
+                    <li><a href="#"><img src="../resources/icons/tiktok.png" alt="Tiktok"></a></li>
+                    <li><a href="#"><img src="../resources/icons/pinterest.png" alt="Pinterest"></a></li>
+                    <li><a href="#"><img src="../resources/icons/youtube.png" alt="Youtube"></a></li>
+                </ul>
+    
+            </div>
+        </div>
+
+        
+    </div> 
+</body>
+</html>

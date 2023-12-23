@@ -26,3 +26,35 @@ function login(){
         document.getElementById("login-failed").innerHTML = "Login Failed";
     }
 }
+
+function addToCart(idName, price){
+    let main = document.getElementById(idName);
+    let image = main.querySelector('img');
+    let paragraphs = main.querySelectorAll('p');
+
+    let cart = document.getElementById("cart-containers");
+
+    let new_product_div = document.createElement("div");
+    new_product_div.className = "product-item";
+
+    let new_image = document.createElement("img");
+    new_image.src = image.src;
+    new_image.className = "image-item"
+
+    let text_1 = paragraphs[0];
+    let text_2 = paragraphs[1];
+
+    let firstParagraph = document.createElement('p');
+    let secondParagraph = document.createElement('p');
+
+    firstParagraph.textContent = text_1.textContent;
+    secondParagraph.textContent = text_2.textContent;
+
+    new_product_div.appendChild(new_image);
+    new_product_div.appendChild(firstParagraph);
+    new_product_div.appendChild(secondParagraph);
+    cart.appendChild(new_product_div);   
+    
+    let initial_value = document.getElementById("total-price");
+    initial_value.innerHTML = parseInt(initial_value.innerHTML, 10) + price;
+}

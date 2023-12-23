@@ -140,14 +140,14 @@ body{
     border: 6px solid #ffe512;
 }
 
-.product{
+.product, .cart .product{
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: rgba(212, 196, 196, 0.278);
     padding-bottom: 100px;
 }
-.product button{
+.product button, .cart .product button{
     width: auto;
     max-width: 200px;
     margin: auto;
@@ -168,7 +168,17 @@ body{
     font-size: 30px;
 }
 
-.product .image-wrapper .image-list .product-item p{
+.product .image-wrapper .image-list .product-item, .cart .image-wrapper .image-list .product-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product .image-wrapper .image-list .product-item button, .cart .image-wrapper .image-list .product-item button{
+    margin: 0;
+}
+
+.product .image-wrapper .image-list .product-item p, .cart .image-wrapper .image-list .product-item p{
     font-size: 20px;
 
 }
@@ -200,18 +210,18 @@ body{
     border-radius: 20px;
 }
 
-.product .image-wrapper .image-list{
+.product .image-wrapper .image-list, .cart .image-wrapper .image-list{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 30px;
     overflow-x: auto;
 }
 
-.product .image-wrapper .image-list::-webkit-scrollbar{
+.product .image-wrapper .image-list::-webkit-scrollbar, .cart .image-wrapper .image-list::-webkit-scrollbar{
     display: none;
 }
 
-.product .image-wrapper .image-list .image-item{
+.product .image-wrapper .image-list .image-item, .cart .image-wrapper .image-list .image-item{
     width: 300px;
     object-fit: cover;
 }
@@ -438,4 +448,57 @@ body{
 
 .login-container #login-failed{
     color: red;
+}
+
+.cart{
+    background-color: rgba(111, 101, 101, 0.278);
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-top: 4px solid black;
+    gap: 100px;
+}
+
+.cart h2{
+    margin: 0;
+}
+
+.cart .right-side{
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    justify-content: center;
+}
+
+.cart .right-side h2{
+    font-size: 40px;
+}
+
+.cart .right-side p{
+    font-size: 30px;
+}
+
+.cart .right-side button{
+    font-family: "Oswald", sans-serif;
+    font-size: 30px;
+    font-weight: lighter;
+    background-color: #ffe512;
+}
+
+.cart .price{
+    display: flex;
+    justify-content: center;
+}
+
+.cart .left-side{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    overflow-x: auto;
+}
+
+.cart .left-side .product-item img{
+    width: 200px;
+    height: auto;
 }
