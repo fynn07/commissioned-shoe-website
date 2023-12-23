@@ -15,6 +15,23 @@ function redirectVersace(){
     window.open("https://www.versace.com/", "_blank");
 }
 
+function redirectAbout(){
+    window.location.href = "../pages/about.html";
+}
+
+function redirectProducts(){
+    window.location.href = "../pages/products.html";
+}
+
+function redirectBilling(){
+    window.location.href = "../pages/billing.html";
+}
+
+function purchase(){
+    alert("Purchase has Been Completed");
+    window.location.href = "../index.html";
+}
+
 function login(){
     let try_user = document.getElementById("user").value;
     let try_pass = document.getElementById("pass").value;
